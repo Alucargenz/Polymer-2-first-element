@@ -1,0 +1,42 @@
+<link rel="import" href="demo-element.html">
+<link rel="import" href="demo-element2.html">
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../../bower_components/paper-scroll-header-panel/paper-scroll-header-panel.html">
+<link rel="import" href="../../bower_components/paper-tabs/paper-tabs.html">
+
+<!doctype html>
+<html>
+
+<head>
+</head>
+<style>
+     :host {
+        height: 100%;
+    }
+</style>
+<template>
+
+  </template>
+<script>
+</script>
+
+<body>
+    <div>
+        HOLA
+    </div>
+    <paper-scroll-header-panel fixed>
+        <div class="title" on-tap="goHome">
+            <div class="spacer">
+                <paper-tabs id="nav" class="top" on-iron-select="switchPages" attr-for-selected="data-altr">
+                    <paper-tab data-altr="section_1">SECTION 1</paper-tab>
+                    <paper-tab data-altr="section_2">SECTION 2</paper-tab>
+                </paper-tabs>
+            </div>
+        </div>
+    </paper-scroll-header-panel>
+    <demo-element></demo-element>
+    <demo-element2></demo-element2>
+</body>
+
+</html>
